@@ -43,7 +43,7 @@ export const Hero: React.FC<HeroProps> = ({ onContactClick }) => {
             href="#work"
             className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-sm font-medium text-[#1D1D1F] bg-[#FAF6ED] hover:bg-[#F2ECE0] border border-[#E5DFD3] transition-all duration-150 active:scale-98"
           >
-            <span>Explore Selected Work</span>
+            <span>Explore Demo Websites</span>
             <ArrowDown className="w-3.5 h-3.5 text-[#86868B]" />
           </a>
         </div>
