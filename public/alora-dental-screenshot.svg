@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap');
+      .font-heading { font-family: 'Outfit', sans-serif; }
+      .font-text { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+
+    <!-- Deep Teal Glow Gradient for Card -->
+    <linearGradient id="cardBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#082c3c" />
+      <stop offset="50%" stop-color="#0a374a" />
+      <stop offset="100%" stop-color="#062330" />
+    </linearGradient>
+
+    <!-- Vibrant Gradient for 'different.' text -->
+    <linearGradient id="differentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF8A8A" />
+      <stop offset="30%" stop-color="#FFA07A" />
+      <stop offset="70%" stop-color="#67E8F9" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+
+    <!-- Radial Glow Behind Headline -->
+    <radialGradient id="centerGlow" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#14b8a6" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#082c3c" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#04151f" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Clean Off-White Background (#F4F7F8) -->
+  <rect width="1280" height="720" fill="#F4F7F8" />
+
+  <!-- ================= TOP NAVIGATION BAR ================= -->
+  <g class="font-text" transform="translate(50, 18)">
+    <!-- ORA Logo -->
+    <g transform="translate(0, 4)">
+      <rect width="36" height="36" rx="10" fill="#082c3c" />
+      <text x="18" y="23" font-family="'Outfit', sans-serif" font-size="13" font-weight="900" fill="#38BDF8" text-anchor="middle">ORA</text>
+      
+      <text x="48" y="20" font-family="'Outfit', sans-serif" font-size="18" font-weight="900" fill="#082c3c" letter-spacing="0.02em">ORA.</text>
+      <text x="48" y="31" font-size="9" font-weight="700" fill="#5A7184" letter-spacing="0.15em">DENTAL</text>
+    </g>
+
+    <!-- Nav Links -->
+    <g font-size="13.5" font-weight="600" fill="#486581">
+      <text x="420" y="27">Home</text>
+      <text x="495" y="27">Our Story</text>
+      <text x="595" y="27">Treatments</text>
+      <text x="705" y="27">Dentists</text>
+      <text x="795" y="27">Results</text>
+      <text x="875" y="27">Contact</text>
+    </g>
+
+    <!-- 'Book a Visit' Button -->
+    <g transform="translate(1030, 6)">
+      <rect width="150" height="42" rx="12" fill="#FF6B6B" />
+      <g transform="translate(20, 13)">
+        <!-- Calendar / Chat Icon -->
+        <rect width="16" height="16" rx="4" fill="none" stroke="#FFFFFF" stroke-width="1.8" />
+        <path d="M4 7 L12 7" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" />
+        <circle cx="8" cy="11" r="1.2" fill="#FFFFFF" />
+      </g>
+      <text x="46" y="26" font-size="13" font-weight="700" fill="#FFFFFF" letter-spacing="0.02em">Book a Visit</text>
+    </g>
+  </g>
+
+  <!-- ================= LARGE HERO CARD ================= -->
+  <g transform="translate(50, 85)">
+    <!-- Card Frame with Shadow -->
+    <rect width="1180" height="585" rx="36" fill="url(#cardBgGrad)" filter="url(#cardShadow)" />
+    <rect width="1180" height="585" rx="36" fill="url(#centerGlow)" />
+
+    <!-- Top Right Accent Dots (Coral, Teal, Cyan) -->
+    <g transform="translate(1090, 32)">
+      <circle cx="0" cy="0" r="6" fill="#FF6B6B" />
+      <circle cx="22" cy="0" r="6" fill="#2DD4BF" />
+      <circle cx="44" cy="0" r="6" fill="#0284C7" />
+    </g>
+
+    <!-- Badge: 'A FRESH DENTAL STANDARD' -->
+    <g class="font-text" transform="translate(460, 48)">
+      <rect width="260" height="32" rx="16" fill="#0d3d52" stroke="#164e63" stroke-width="1" />
+      <!-- Star Icon -->
+      <g transform="translate(14, 8)">
+        <path d="M8 1 L10 6 L15 8 L10 10 L8 15 L6 10 L1 8 L6 6 Z" fill="#FF8A8A" />
+      </g>
+      <text x="32" y="20" font-size="11" font-weight="800" fill="#A5F3FC" letter-spacing="0.12em">A FRESH DENTAL STANDARD</text>
+    </g>
+
+    <!-- Main Headline: 'Dentistry can feel different.' -->
+    <g class="font-heading" text-anchor="middle">
+      <text x="590" y="165" font-size="68" font-weight="900" fill="#FFFFFF" letter-spacing="-0.02em">
+        Dentistry can feel
+      </text>
+      <text x="590" y="240" font-size="68" font-weight="900" fill="url(#differentGrad)" letter-spacing="-0.02em">
+        different.
+      </text>
+    </g>
+
+    <!-- Subtitle: 'Less clinical. More comfortable. More personal.' -->
+    <text x="590" y="310" class="font-heading" font-size="23" font-weight="700" fill="#FFFFFF" text-anchor="middle" opacity="0.95" letter-spacing="-0.01em">
+      Less clinical. More comfortable. More personal.
+    </text>
+
+    <!-- ================= 3 FEATURE CARDS ================= -->
+    <g transform="translate(55, 360)">
+      <!-- Card 1: No Clinical Coldness -->
+      <g transform="translate(0, 0)">
+        <rect width="335" height="180" rx="22" fill="#0b374d" opacity="0.95" stroke="#134e6b" stroke-width="1" />
+        <!-- Red Heart Icon -->
+        <g transform="translate(22, 22)">
+          <rect width="42" height="42" rx="12" fill="#FF6B6B" opacity="0.9" />
+          <path d="M21 28 L19.6 26.7 C14.6 22.1 11.2 19.1 11.2 15.3 C11.2 12.2 13.6 9.8 16.7 9.8 C18.4 9.8 20.1 10.6 21 11.9 C21.9 10.6 23.6 9.8 25.3 9.8 C28.4 9.8 30.8 12.2 30.8 15.3 C30.8 19.1 27.4 22.1 22.4 26.7 Z" fill="#FFFFFF" />
+        </g>
+        <text x="22" y="94" class="font-heading" font-size="17" font-weight="800" fill="#FFFFFF">No Clinical Coldness</text>
+        <text x="22" y="120" class="font-text" font-size="12.5" font-weight="500" fill="#BAE6FD" opacity="0.85">
+          <tspan x="22" dy="0">We replaced harsh fluorescent</tspan>
+          <tspan x="22" dy="20">lights with natural daylight,</tspan>
+          <tspan x="22" dy="20">acoustic calm, and genuine</tspan>
+          <tspan x="22" dy="20">conversations.</tspan>
+        </text>
+      </g>
+
+      <!-- Card 2: Zero Sticky Impressions -->
+      <g transform="translate(365, 0)">
+        <rect width="335" height="180" rx="22" fill="#0b374d" opacity="0.95" stroke="#134e6b" stroke-width="1" />
+        <!-- Mint Lightning Icon -->
+        <g transform="translate(22, 22)">
+          <rect width="42" height="42" rx="12" fill="#2DD4BF" opacity="0.9" />
+          <path d="M22 10 L14 22 L20 22 L18 32 L28 18 L21 18 Z" fill="#FFFFFF" />
+        </g>
+        <text x="22" y="94" class="font-heading" font-size="17" font-weight="800" fill="#FFFFFF">Zero Sticky Impressions</text>
+        <text x="22" y="120" class="font-text" font-size="12.5" font-weight="500" fill="#BAE6FD" opacity="0.85">
+          <tspan x="22" dy="0">3D optical micro-scanners map</tspan>
+          <tspan x="22" dy="20">teeth in 60 seconds with sub-</tspan>
+          <tspan x="22" dy="20">millimeter precision—no goop, no</tspan>
+          <tspan x="22" dy="20">gagging.</tspan>
+        </text>
+      </g>
+
+      <!-- Card 3: Your Pace, Always -->
+      <g transform="translate(730, 0)">
+        <rect width="335" height="180" rx="22" fill="#0b374d" opacity="0.95" stroke="#134e6b" stroke-width="1" />
+        <!-- Cyan Smile Icon -->
+        <g transform="translate(22, 22)">
+          <rect width="42" height="42" rx="12" fill="#38BDF8" opacity="0.9" />
+          <circle cx="21" cy="21" r="10" fill="none" stroke="#FFFFFF" stroke-width="2.2" />
+          <circle cx="17.5" cy="18.5" r="1.5" fill="#FFFFFF" />
+          <circle cx="24.5" cy="18.5" r="1.5" fill="#FFFFFF" />
+          <path d="M16 23 C17.5 26, 24.5 26, 26 23" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+        </g>
+        <text x="22" y="94" class="font-heading" font-size="17" font-weight="800" fill="#FFFFFF">Your Pace, Always</text>
+        <text x="22" y="120" class="font-text" font-size="12.5" font-weight="500" fill="#BAE6FD" opacity="0.85">
+          <tspan x="22" dy="0">You are in total control. Pause</tspan>
+          <tspan x="22" dy="20">anytime with a simple hand</tspan>
+          <tspan x="22" dy="20">gesture; our team works</tspan>
+          <tspan x="22" dy="20">completely at your comfort level.</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Floating Chat Pill -->
+  <g class="font-text" transform="translate(1040, 680)">
+    <rect width="170" height="32" rx="16" fill="#082c3c" opacity="0.95" />
+    <text x="20" y="20" font-size="11" font-weight="700" fill="#FFFFFF">Chat with ORA Team</text>
+    <text x="150" y="20" font-size="12" font-weight="400" fill="#94A3B8">×</text>
+  </g>
+</svg>

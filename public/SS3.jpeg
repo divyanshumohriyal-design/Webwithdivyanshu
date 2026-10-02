@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap');
+      .font-serif { font-family: 'DM Serif Display', Georgia, serif; }
+      .font-sans { font-family: 'Manrope', -apple-system, sans-serif; }
+    </style>
+
+    <!-- Ceramic Gradient -->
+    <linearGradient id="ceramicGrad" x1="20%" y1="10%" x2="80%" y2="90%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="25%" stop-color="#F3EFE8" />
+      <stop offset="60%" stop-color="#DCD4C7" />
+      <stop offset="100%" stop-color="#AFA495" />
+    </linearGradient>
+
+    <!-- Shading Gradient -->
+    <radialGradient id="torusHighlight" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9" />
+      <stop offset="40%" stop-color="#EBE5DC" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#9E9385" stop-opacity="0.9" />
+    </radialGradient>
+
+    <!-- Metallic Pin Gradient -->
+    <linearGradient id="metalPin" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3A3530" />
+      <stop offset="40%" stop-color="#8A7D70" />
+      <stop offset="70%" stop-color="#E0D5C7" />
+      <stop offset="100%" stop-color="#2B2520" />
+    </linearGradient>
+
+    <!-- Terracotta Sphere -->
+    <radialGradient id="terracotta" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#E8A082" />
+      <stop offset="50%" stop-color="#C47A5C" />
+      <stop offset="100%" stop-color="#783E28" />
+    </radialGradient>
+
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#2E2A24" flood-opacity="0.14" />
+    </filter>
+    <filter id="badgeShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.06" />
+    </filter>
+  </defs>
+
+  <!-- Clean Minimal Background (#F9F6F0) -->
+  <rect width="1280" height="720" fill="#F9F6F0" />
+
+  <!-- ================= TOP NAVIGATION BAR ================= -->
+  <g class="font-sans" transform="translate(50, 20)">
+    <!-- LUMÉRA Brand Logo -->
+    <g transform="translate(0, 6)">
+      <text x="0" y="16" font-family="'DM Serif Display', serif" font-size="20" font-weight="400" fill="#222621" letter-spacing="0.15em">LUMÉRA</text>
+      <text x="0" y="29" font-size="8.5" font-weight="700" fill="#8B7E74" letter-spacing="0.22em">BEAUTY STUDIO</text>
+    </g>
+
+    <!-- Navigation Links -->
+    <g font-size="13.5" font-weight="500" fill="#394238">
+      <text x="390" y="25" font-weight="700">Home</text>
+      <text x="470" y="25">Services</text>
+      <text x="570" y="25">Experience</text>
+      <text x="685" y="25">Gallery</text>
+      <text x="775" y="25">About</text>
+      <text x="855" y="25">Contact</text>
+    </g>
+
+    <!-- 'PORTAL' Pill -->
+    <g transform="translate(960, 6)">
+      <rect width="100" height="38" rx="19" fill="none" stroke="#DCD3C7" stroke-width="1.2" />
+      <circle cx="22" cy="19" r="5" fill="none" stroke="#6E675F" stroke-width="1.2" />
+      <path d="M17 21 C17 19, 27 19, 27 21" fill="none" stroke="#6E675F" stroke-width="1.2" />
+      <text x="38" y="23" font-size="11.5" font-weight="700" fill="#394238" letter-spacing="0.08em">PORTAL</text>
+    </g>
+
+    <!-- 'BOOK NOW ↗' Pill -->
+    <g transform="translate(1075, 6)">
+      <rect width="125" height="38" rx="19" fill="#28312B" />
+      <text x="20" y="23" font-size="11.5" font-weight="800" fill="#FFFFFF" letter-spacing="0.08em">BOOK NOW</text>
+      <path d="M98 21 L106 13 M101 13 L106 13 L106 18" stroke="#FFFFFF" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+  </g>
+
+  <!-- ================= LEFT HERO CONTENT ================= -->
+  <g transform="translate(50, 120)">
+    <!-- Studio Tagline Indicator -->
+    <g class="font-sans" transform="translate(0, 0)">
+      <line x1="0" y1="-4" x2="18" y2="-4" stroke="#8B7E74" stroke-width="1.5" />
+      <text x="28" y="0" font-size="11" font-weight="700" fill="#6E675F" letter-spacing="0.18em">LUMÉRA BEAUTY STUDIO</text>
+    </g>
+
+    <!-- Main Editorial Headline (DM Serif Display) -->
+    <g class="font-serif" transform="translate(0, 68)">
+      <text x="0" y="0" font-size="74" font-weight="400" fill="#222621" letter-spacing="-0.02em">
+        Beauty,
+      </text>
+      <text x="0" y="82" font-size="74" font-weight="400" fill="#222621" letter-spacing="-0.02em">
+        sculpted around
+      </text>
+      <text x="0" y="164" font-size="74" font-weight="400" fill="#222621" letter-spacing="-0.02em">
+        you.
+      </text>
+    </g>
+
+    <!-- Paragraph Description -->
+    <g class="font-sans" transform="translate(0, 310)">
+      <text x="0" y="0" font-size="15.5" font-weight="400" fill="#5A564F" line-height="1.6">
+        <tspan x="0" dy="0">Where modern beauty techniques meet a slower, more</tspan>
+        <tspan x="0" dy="26">thoughtful salon experience. Tailored cuts, dimensional color,</tspan>
+        <tspan x="0" dy="26">and dermal rituals crafted exclusively for your essence.</tspan>
+      </text>
+    </g>
+
+    <!-- Action Buttons -->
+    <g class="font-sans" transform="translate(0, 410)">
+      <!-- Primary Button -->
+      <g>
+        <rect width="220" height="50" rx="25" fill="#28312B" />
+        <text x="110" y="30" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.08em">BOOK AN APPOINTMENT</text>
+      </g>
+
+      <!-- Secondary Button -->
+      <g transform="translate(235, 0)">
+        <rect width="180" height="50" rx="25" fill="#FAF6EE" stroke="#DCD3C7" stroke-width="1.2" />
+        <text x="90" y="30" font-size="11.5" font-weight="700" fill="#394238" text-anchor="middle" letter-spacing="0.08em">EXPLORE SERVICES</text>
+      </g>
+    </g>
+
+    <!-- Footer Location & Hours Info -->
+    <g class="font-sans" transform="translate(0, 520)" font-size="11.5" font-weight="600" fill="#7A746B">
+      <text x="0" y="0">◎  Rajpur Road, Dehradun</text>
+      <text x="170" y="0">•</text>
+      <text x="190" y="0">◷  By Appointment &amp; Walk-Ins</text>
+      <text x="380" y="0">•</text>
+      <text x="400" y="0">𖤣  Unisex Sanctuary</text>
+    </g>
+  </g>
+
+  <!-- ================= RIGHT 3D SCULPTURE & STAGING ================= -->
+  <g transform="translate(690, 95)">
+    <!-- Sculpture Container Canvas -->
+    <g filter="url(#softShadow)">
+      <!-- Soft ambient backdrop aura -->
+      <ellipse cx="300" cy="270" rx="260" ry="240" fill="#F0EAE0" opacity="0.6" />
+
+      <!-- Back loop of ceramic structure -->
+      <path d="M140 180 C110 90, 260 50, 340 110 C400 155, 380 260, 300 290 C220 320, 160 250, 140 180 Z" fill="url(#ceramicGrad)" opacity="0.9" />
+      <path d="M170 190 C185 140, 260 120, 300 150 C340 180, 330 240, 280 255 C230 270, 160 230, 170 190 Z" fill="#F9F6F0" />
+
+      <!-- Vertical Metallic Rod/Pin Piercing the Structure -->
+      <rect x="285" y="30" width="14" height="520" rx="7" fill="url(#metalPin)" />
+
+      <!-- Main Sweeping Sculptural Ceramic Ribbon (Front Loop) -->
+      <path d="M-20 280 C60 220, 240 220, 480 340 C530 365, 530 460, 440 500 C340 545, 180 520, 40 430 C-30 390, -70 330, -20 280 Z" fill="url(#torusHighlight)" />
+
+      <!-- Central flowing ribbon bridge -->
+      <path d="M-10 290 C120 240, 280 250, 470 350 C440 400, 320 400, 180 360 C70 330, 20 320, -10 290 Z" fill="url(#ceramicGrad)" />
+
+      <!-- Warm Terracotta Ceramic Orb Accent -->
+      <circle cx="480" cy="490" r="52" fill="url(#terracotta)" />
+
+      <!-- Front-most highlight sheen -->
+      <path d="M40 300 C150 260, 300 280, 430 360" fill="none" stroke="#FFFFFF" stroke-width="16" opacity="0.5" stroke-linecap="round" filter="blur(4px)" />
+    </g>
+
+    <!-- Floating Frosted Art Direction Badge -->
+    <g class="font-sans" transform="translate(320, 25)" filter="url(#badgeShadow)">
+      <rect width="200" height="74" rx="16" fill="#FAF6EE" opacity="0.92" stroke="#E8DFD3" stroke-width="1" />
+      <text x="180" y="32" font-family="'DM Serif Display', Georgia, serif" font-style="italic" font-size="11.5" fill="#394238" text-anchor="end">
+        "Form, flow, and texture in
+      </text>
+      <text x="180" y="47" font-family="'DM Serif Display', Georgia, serif" font-style="italic" font-size="11.5" fill="#394238" text-anchor="end">
+        organic harmony."
+      </text>
+      <text x="180" y="62" font-size="9" font-weight="800" fill="#B98E78" text-anchor="end" letter-spacing="0.14em">
+        3D ART DIRECTION
+      </text>
+    </g>
+  </g>
+
+  <!-- ================= BOTTOM DISCOVER & NETLIFY ================= -->
+  <g class="font-sans" transform="translate(605, 680)">
+    <text x="0" y="0" font-size="9.5" font-weight="700" fill="#8B7E74" letter-spacing="0.18em">DISCOVER</text>
+    <path d="M28 6 L32 10 L36 6" stroke="#8B7E74" stroke-width="1.4" fill="none" stroke-linecap="round" />
+  </g>
+
+  <g class="font-sans" transform="translate(1120, 672)">
+    <rect width="115" height="26" rx="6" fill="#09090b" opacity="0.9" />
+    <path d="M10 13 L14 9 L18 13 L14 17 Z" fill="#00C7B7" />
+    <text x="24" y="16.5" font-size="9" font-weight="600" fill="#D4D4D8">Powered by <tspan font-weight="800" fill="#FFFFFF">Netlify</tspan></text>
+  </g>
+</svg>

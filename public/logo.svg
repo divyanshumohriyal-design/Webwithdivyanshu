@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Outer Ring Gradient -->
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="40%" stop-color="#38bdf8" />
+      <stop offset="70%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#9333ea" />
+    </linearGradient>
+
+    <!-- Triangle Accent Gradient -->
+    <linearGradient id="triGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+
+    <!-- Divyanshu Text Gradient -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#60a5fa" />
+      <stop offset="75%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <!-- Subtle Glow Filter -->
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="#070A12" />
+
+  <!-- Outer Luminous Ring -->
+  <circle cx="400" cy="400" r="335" fill="none" stroke="url(#ringGrad)" stroke-width="9" filter="url(#subtleGlow)" />
+  <circle cx="400" cy="400" r="335" fill="none" stroke="url(#ringGrad)" stroke-width="7" />
+
+  <!-- Monogram WD -->
+  <g transform="translate(195, 230)">
+    <!-- W Left diagonal -->
+    <polygon points="0,0 52,0 102,176 52,176" fill="#FFFFFF" />
+    <!-- W Center Left ascending -->
+    <polygon points="52,176 102,176 150,30 115,30" fill="#FFFFFF" />
+    <!-- Inverted Triangle Arrow Accent between W and D -->
+    <polygon points="120,0 190,0 155,60" fill="url(#triGrad)" />
+    <!-- W Center Right descending -->
+    <polygon points="155,60 190,0 210,176 160,176" fill="#FFFFFF" />
+
+    <!-- D Letter -->
+    <g transform="translate(216, 0)">
+      <!-- D Spine -->
+      <rect x="0" y="0" width="46" height="176" fill="#FFFFFF" />
+      <!-- D Bowl Outer -->
+      <path d="M 46,0 L 110,0 C 160,0 190,38 190,88 C 190,138 160,176 110,176 L 46,176 Z M 92,44 L 92,132 L 108,132 C 132,132 144,116 144,88 C 144,60 132,44 108,44 Z" fill="#FFFFFF" />
+    </g>
+  </g>
+
+  <!-- Brand Typography -->
+  <!-- "WEB WITH" -->
+  <text x="400" y="475" text-anchor="middle" fill="#FFFFFF" font-family="'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif" font-size="34" font-weight="700" letter-spacing="14">WEB WITH</text>
+
+  <!-- "DIVYANSHU" -->
+  <text x="400" y="535" text-anchor="middle" fill="url(#textGrad)" font-family="'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif" font-size="44" font-weight="800" letter-spacing="13">DIVYANSHU</text>
+
+  <!-- Divider Lines and Tagline -->
+  <line x1="195" y1="585" x2="265" y2="585" stroke="#3b82f6" stroke-width="2" stroke-opacity="0.8" />
+  <text x="400" y="575" text-anchor="middle" fill="#E2E8F0" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="14.5" font-weight="600" letter-spacing="6">SIMPLE WEBSITES.</text>
+  <text x="400" y="598" text-anchor="middle" fill="#E2E8F0" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="14.5" font-weight="600" letter-spacing="6">REAL BUSINESSES.</text>
+  <line x1="535" y1="585" x2="605" y2="585" stroke="#3b82f6" stroke-width="2" stroke-opacity="0.8" />
+</svg>
