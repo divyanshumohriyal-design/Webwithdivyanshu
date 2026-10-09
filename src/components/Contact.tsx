@@ -7,38 +7,38 @@ export const Contact: React.FC = () => {
   )}`;
 
   return (
-    <section id="contact" className="py-24 md:py-32 relative border-t border-[#EAE4D7]">
+    <section id="contact" className="py-24 md:py-32 relative border-t border-[#EBEBEB]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl">
-          <div className="text-[11px] font-mono uppercase tracking-[0.2em] text-[#86868B] mb-3">
+          <div className="text-[11px] font-mono uppercase tracking-[0.2em] text-[#737373] mb-3">
             08 · Contact
           </div>
-          <h2 className="text-3xl sm:text-5xl font-medium tracking-tight text-[#1D1D1F] mb-6">
+          <h2 className="text-3xl sm:text-5xl font-medium tracking-tight text-[#171717] mb-6">
             Have a business that needs a better website?
           </h2>
-          <p className="text-lg sm:text-xl text-[#6E6E73] font-normal leading-relaxed mb-10 max-w-2xl">
-            Tell me what you're building and let's see what we can create together.
+          <p className="text-lg sm:text-xl text-[#525252] font-normal leading-relaxed mb-10 max-w-2xl">
+            Tell me about your business, and let's discuss how a website could help you build a stronger online presence.
           </p>
 
-          {/* Direct Contact Actions — Absolutely No Forms */}
+          {/* Direct Contact Actions — Strictly No Form Inputs */}
           <div className="flex flex-wrap items-center gap-3.5 mb-14">
             <a
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-semibold tracking-wide text-white bg-[#1D1D1F] hover:bg-[#2C2C2E] transition-all duration-150 active:scale-98 shadow-sm group cursor-pointer"
+              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-semibold tracking-wide text-white bg-[#171717] hover:bg-[#262626] transition-all duration-150 active:scale-98 shadow-sm group cursor-pointer"
             >
               <span>Let's Work Together</span>
-              <ArrowUpRight className="w-4 h-4 transition-transform duration-150 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              <ArrowUpRight className="w-4 h-4 text-neutral-300 group-hover:text-white transition-transform duration-150 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
 
             <a
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-sm font-medium text-[#1D1D1F] bg-[#FAF6ED] hover:bg-[#F2ECE0] border border-[#E5DFD3] transition-all duration-150 active:scale-98"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-sm font-medium text-[#171717] bg-white hover:bg-[#F5F5F5] border border-[#E5E5E5] transition-all duration-150 active:scale-98 shadow-xs"
             >
-              <MessageCircle className="w-4 h-4 text-emerald-600" />
+              <MessageCircle className="w-4 h-4 text-[#F26522]" />
               <span>Chat on WhatsApp</span>
             </a>
 
@@ -46,22 +46,40 @@ export const Contact: React.FC = () => {
               href="https://instagram.com/webwithdivyanshu"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-sm font-medium text-[#1D1D1F] bg-[#FAF6ED] hover:bg-[#F2ECE0] border border-[#E5DFD3] transition-all duration-150 active:scale-98"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-sm font-medium text-[#171717] bg-white hover:bg-[#F5F5F5] border border-[#E5E5E5] transition-all duration-150 active:scale-98 shadow-xs"
             >
-              <Instagram className="w-4 h-4 text-purple-700" />
+              <Instagram className="w-4 h-4 text-[#737373]" />
               <span>DM on Instagram</span>
             </a>
           </div>
 
-          {/* Simple Contact Details */}
-          <div className="pt-8 border-t border-[#EAE4D7] flex flex-wrap items-center gap-8 text-xs text-[#6E6E73]">
+          {/* Clean Contact Metadata Box */}
+          <div className="p-6 rounded-2xl bg-white border border-[#E5E5E5] shadow-xs flex flex-wrap items-center gap-8 text-xs text-[#525252]">
             <div>
-              <span className="text-[#86868B] block mb-0.5">WhatsApp Business</span>
-              <span className="font-mono font-medium text-[#1D1D1F]">+91 7579429886</span>
+              <span className="text-[#737373] block mb-0.5">WhatsApp Direct</span>
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-mono font-medium text-[#171717] hover:text-[#F26522] transition-colors"
+              >
+                +91 7579429886
+              </a>
             </div>
             <div>
-              <span className="text-[#86868B] block mb-0.5">Instagram Profile</span>
-              <span className="font-medium text-[#1D1D1F]">@webwithdivyanshu</span>
+              <span className="text-[#737373] block mb-0.5">Instagram Profile</span>
+              <a
+                href="https://instagram.com/webwithdivyanshu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-[#171717] hover:text-[#F26522] transition-colors"
+              >
+                @webwithdivyanshu
+              </a>
+            </div>
+            <div>
+              <span className="text-[#737373] block mb-0.5">Location</span>
+              <span className="font-medium text-[#171717]">India · Serving Worldwide</span>
             </div>
           </div>
         </div>

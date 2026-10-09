@@ -1,39 +1,38 @@
 import React from 'react';
 
 /**
- * HoneyEmberBackground
- * A warm, light, minimal atmospheric background inspired by the Honey Ember concept.
- * Features:
- * - Soft warm ivory base (#FFFDF7)
- * - Heavily diffused ambient color fields in soft amber, golden warmth, peach and blush
- * - Fine warm-gray dot grid texture
- * - Completely STATIC: No cursor tracking, no canvas loops, highly performant
+ * EditorialMinimalBackground
+ * A clean, light, architectural background aligned with the minimal editorial aesthetic.
+ * Foundation:
+ * - Crisp off-white / light neutral base (#F9F9F8)
+ * - Ultra-subtle architectural lighting gradients
+ * - Faint geometric dot grid for precision editorial structure
+ * - 100% static, zero-runtime overhead
  */
 export const HoneyEmberBackground: React.FC = () => {
   return (
     <div
       aria-hidden="true"
-      className="pointer-events-none fixed inset-0 z-0 overflow-hidden select-none bg-[#FFFDF7]"
+      className="pointer-events-none fixed inset-0 z-0 overflow-hidden select-none bg-[#FAFAFA]"
     >
-      {/* Soft Ambient Atmospheric Glow Fields (Heavily diffused and low-opacity) */}
-      <div className="absolute -top-[15%] left-[20%] w-[650px] h-[550px] rounded-full bg-[#FBBF24]/10 blur-[140px]" />
-      <div className="absolute top-[25%] -right-[10%] w-[600px] h-[600px] rounded-full bg-[#FB923C]/8 blur-[150px]" />
-      <div className="absolute top-[50%] -left-[12%] w-[550px] h-[550px] rounded-full bg-[#F59E0B]/7 blur-[140px]" />
-      <div className="absolute top-[75%] right-[15%] w-[600px] h-[500px] rounded-full bg-[#FECACA]/12 blur-[160px]" />
-      <div className="absolute bottom-[2%] left-[30%] w-[500px] h-[450px] rounded-full bg-[#FBBF24]/8 blur-[140px]" />
+      {/* Subtle architectural ambient light washes */}
+      <div className="absolute -top-[12%] left-[15%] w-[680px] h-[520px] rounded-full bg-[#E5E5E5]/40 blur-[130px]" />
+      <div className="absolute top-[30%] -right-[8%] w-[580px] h-[580px] rounded-full bg-[#F26522]/5 blur-[160px]" />
+      <div className="absolute top-[60%] -left-[10%] w-[540px] h-[540px] rounded-full bg-[#E5E5E5]/35 blur-[140px]" />
+      <div className="absolute bottom-[0%] right-[20%] w-[620px] h-[480px] rounded-full bg-[#F26522]/4 blur-[160px]" />
 
-      {/* Very Fine Warm-Gray Dot Matrix Texture */}
+      {/* Clean Faint Editorial Dot Grid Texture */}
       <div
-        className="absolute inset-0 opacity-75"
+        className="absolute inset-0 opacity-[0.45]"
         style={{
           backgroundImage:
-            'radial-gradient(rgba(60, 50, 40, 0.065) 1px, transparent 1px)',
-          backgroundSize: '24px 24px',
+            'radial-gradient(rgba(23, 23, 23, 0.08) 1px, transparent 1px)',
+          backgroundSize: '28px 28px',
         }}
       />
 
-      {/* Subtle top & bottom ambient vignette */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#FFFDF7]/15 to-[#FFFDF7]/40" />
+      {/* Top and Bottom soft fade */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#FAFAFA]/40 via-transparent to-[#FAFAFA]/80" />
     </div>
   );
 };

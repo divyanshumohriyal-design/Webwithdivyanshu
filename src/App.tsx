@@ -28,7 +28,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#FFFDF7] text-[#1D1D1F] selection:bg-amber-100 selection:text-amber-950 flex flex-col font-sans relative antialiased">
+    <div className="min-h-screen bg-[#FAFAFA] text-[#171717] selection:bg-[#F26522]/15 selection:text-[#171717] flex flex-col font-sans relative antialiased">
       {/* 21st.dev Honey Ember-Inspired Atmospheric Background System */}
       <HoneyEmberBackground />
 

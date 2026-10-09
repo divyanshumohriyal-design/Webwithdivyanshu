@@ -45,48 +45,48 @@ export const Services: React.FC = () => {
   ];
 
   return (
-    <section id="services" className="py-24 md:py-32 relative">
+    <section id="services" className="py-24 md:py-32 relative border-t border-[#EBEBEB]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-2xl mb-14 md:mb-18">
-          <div className="text-[11px] font-mono uppercase tracking-[0.2em] text-[#86868B] mb-3">
+          <div className="text-[11px] font-mono uppercase tracking-[0.2em] text-[#737373] mb-3">
             02 · Services
           </div>
-          <h2 className="text-3xl sm:text-5xl font-medium tracking-tight text-[#1D1D1F] mb-4">
+          <h2 className="text-3xl sm:text-5xl font-medium tracking-tight text-[#171717] mb-4">
             What I Do
           </h2>
-          <p className="text-base sm:text-lg text-[#6E6E73] font-normal leading-relaxed">
+          <p className="text-base sm:text-lg text-[#525252] font-normal leading-relaxed">
             Focused website design and implementation for businesses that want to look professional online.
           </p>
         </div>
 
         {/* Primary Service Showcase Box */}
-        <div className="p-8 sm:p-12 rounded-3xl bg-[#FFFDF7] border border-[#E8E2D5] shadow-[0_8px_30px_rgba(40,30,20,0.03)] mb-14">
+        <div className="p-8 sm:p-12 rounded-3xl bg-white border border-[#E5E5E5] shadow-[0_8px_30px_rgba(0,0,0,0.03)] mb-14">
           <div className="max-w-3xl">
-            <span className="text-[11px] font-mono uppercase tracking-widest text-amber-800 bg-amber-50 px-3 py-1 rounded-full border border-amber-200/60 inline-block mb-4 font-semibold">
+            <span className="text-[11px] font-mono uppercase tracking-widest text-[#F26522] bg-[#F26522]/10 px-3 py-1 rounded-full inline-block mb-4 font-semibold">
               Primary Service
             </span>
-            <h3 className="text-2xl sm:text-4xl font-semibold tracking-tight text-[#1D1D1F] mb-4">
+            <h3 className="text-2xl sm:text-4xl font-semibold tracking-tight text-[#171717] mb-4">
               One-Page Business Website
             </h3>
-            <p className="text-base sm:text-lg text-[#6E6E73] font-normal leading-relaxed">
-              Modern, responsive websites designed around your business, your customers and your goals.
+            <p className="text-base sm:text-lg text-[#525252] font-normal leading-relaxed">
+              Modern, responsive websites designed around your business, your customers, and your goals.
             </p>
           </div>
         </div>
 
         {/* Clean Editorial List with Thin Separators */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-14 gap-y-9 border-t border-[#EAE4D7] pt-12 mb-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-14 gap-y-10 border-t border-[#EBEBEB] pt-12 mb-14">
           {serviceList.map((service) => (
             <div key={service.num} className="flex items-start gap-5 group">
-              <span className="text-xs font-mono font-medium text-amber-800/80 pt-0.5">
+              <span className="text-xs font-mono font-medium text-[#F26522] pt-0.5">
                 {service.num}
               </span>
               <div>
-                <h4 className="text-base font-semibold text-[#1D1D1F] mb-1 group-hover:text-amber-900 transition-colors">
+                <h4 className="text-base font-semibold text-[#171717] mb-1 group-hover:text-[#F26522] transition-colors">
                   {service.title}
                 </h4>
-                <p className="text-xs sm:text-sm text-[#6E6E73] font-normal leading-relaxed">
+                <p className="text-xs sm:text-sm text-[#525252] font-normal leading-relaxed">
                   {service.note}
                 </p>
               </div>
@@ -95,12 +95,12 @@ export const Services: React.FC = () => {
         </div>
 
         {/* Clearly Visible Hosting Disclosure */}
-        <div className="p-5 sm:p-6 rounded-2xl border border-[#E8E2D5] bg-[#FAF6ED]/70 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-[#6E6E73]">
+        <div className="p-5 sm:p-6 rounded-2xl border border-[#E5E5E5] bg-white flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-[#525252] shadow-xs">
           <div className="max-w-2xl leading-relaxed">
-            <strong className="text-[#1D1D1F] font-semibold">Important Hosting Notice:</strong>{' '}
+            <strong className="text-[#171717] font-semibold">Hosting Disclosure:</strong>{' '}
             Hosting charges are paid separately by the client. You keep direct ownership and full administrative control of your hosting account.
           </div>
-          <div className="text-[11px] font-mono text-[#86868B] shrink-0">
+          <div className="text-[11px] font-mono text-[#737373] shrink-0">
             Transparent Terms
           </div>
         </div>

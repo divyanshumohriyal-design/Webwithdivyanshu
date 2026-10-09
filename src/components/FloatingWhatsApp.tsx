@@ -13,13 +13,13 @@ export const FloatingWhatsApp: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp with Divyanshu"
-        className="group relative flex items-center gap-2.5 px-4 py-3 rounded-full bg-[#1D1D1F] hover:bg-[#2C2C2E] text-white shadow-[0_8px_30px_rgba(29,29,31,0.18)] border border-[#3A3A3C] transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
+        className="group relative flex items-center gap-2.5 px-4 py-3 rounded-full bg-[#171717] hover:bg-[#262626] text-white shadow-[0_8px_30px_rgba(0,0,0,0.18)] border border-[#2E2E2E] transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
       >
         <span className="relative flex h-2.5 w-2.5">
-          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-          <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500" />
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#F26522] opacity-75" />
+          <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#F26522]" />
         </span>
-        <MessageCircle className="w-4 h-4 text-emerald-400 group-hover:text-white transition-colors" />
+        <MessageCircle className="w-4 h-4 text-[#F26522] group-hover:text-white transition-colors" />
         <span className="text-xs font-semibold tracking-wide">WhatsApp</span>
       </a>
     </aside>
