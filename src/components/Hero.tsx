@@ -1,6 +1,8 @@
 import React from 'react';
 import { Logo } from './Logo';
 import { ArrowUpRight, ArrowDown, MapPin, Globe } from 'lucide-react';
+import { RevealText } from './RevealText';
+import { AnimatedTextGradientMotion } from './AnimatedTextGradientMotion';
 
 interface HeroProps {
   onContactClick: () => void;
@@ -14,18 +16,23 @@ export const Hero: React.FC<HeroProps> = ({ onContactClick }) => {
   return (
     <section className="relative pt-32 sm:pt-40 md:pt-48 pb-20 md:pb-28 overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* Small Label with restrained accent */}
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#E5E5E5] text-[11px] font-mono uppercase tracking-[0.18em] text-[#525252] shadow-xs mb-8">
-          <span className="w-1.5 h-1.5 rounded-full bg-[#F26522]" />
-          <span>WEBWITHDIVYANSHU · INDEPENDENT WEB DESIGN</span>
+        {/* Small Label with Animated Gradient Text */}
+        <div className="inline-flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 px-4 py-1.5 rounded-full bg-white border border-[#E5E5E5] text-[11px] sm:text-xs font-mono uppercase tracking-[0.16em] text-[#525252] shadow-xs mb-8">
+          <span className="w-1.5 h-1.5 rounded-full bg-[#F26522] shrink-0" />
+          <AnimatedTextGradientMotion
+            text="Websites for Your Business"
+            className="font-semibold"
+          />
+          <span className="text-neutral-300 hidden sm:inline-block">·</span>
+          <span className="hidden sm:inline-block">Independent Web Design</span>
         </div>
 
         {/* Large Editorial Headline */}
         <h1
-          className="text-4xl sm:text-6xl md:text-7xl lg:text-[80px] font-medium tracking-tight text-[#171717] leading-[1.06] mb-7 max-w-4xl mx-auto"
+          className="text-4xl sm:text-6xl md:text-7xl lg:text-[78px] font-medium tracking-tight text-[#171717] leading-[1.08] mb-7 max-w-4xl mx-auto"
           style={{ textWrap: 'balance' }}
         >
-          Websites that make small businesses look established.
+          <RevealText text="WEBSITES" overlayColor="#F26522" textColor="#171717" /> that make Cafes, Salons, Gyms, and Businesses look established.
         </h1>
 
         {/* Supporting Editorial Paragraph */}
