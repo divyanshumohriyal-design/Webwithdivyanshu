@@ -33,11 +33,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onContactClick }) => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-40 px-3 sm:px-6 pt-3 sm:pt-4 transition-all duration-300">
+    <header className="fixed top-0 left-0 right-0 z-40 px-2 sm:px-6 pt-2.5 sm:pt-4 transition-all duration-300">
       <div className="max-w-6xl mx-auto">
         {/* Pill-shaped Navigation Bar */}
         <div
-          className={`flex items-center justify-between px-3 sm:px-4 py-2 sm:py-2.5 rounded-full transition-all duration-300 ${
+          className={`flex items-center justify-between px-2.5 sm:px-4 py-1.5 sm:py-2.5 rounded-full transition-all duration-300 gap-1.5 sm:gap-4 ${
             isScrolled
               ? 'bg-white/95 backdrop-blur-md border border-[#E5E5E5] shadow-[0_8px_30px_rgba(0,0,0,0.06)]'
               : 'bg-white/90 backdrop-blur-sm border border-[#EBEBEB] shadow-[0_2px_16px_rgba(0,0,0,0.03)]'
@@ -46,17 +46,18 @@ export const Navbar: React.FC<NavbarProps> = ({ onContactClick }) => {
           {/* Brand: Original WebWithDivyanshu Logo */}
           <a
             href="#"
-            className="flex items-center gap-2.5 group transition-opacity hover:opacity-90 pl-1"
+            className="flex items-center gap-1.5 sm:gap-2.5 group transition-opacity hover:opacity-90 pl-0.5 sm:pl-1 shrink-0 min-w-0"
             aria-label="WebWithDivyanshu"
           >
-            <div className="p-0.5 bg-[#070A12] rounded-xl shadow-xs shrink-0">
-              <Logo size={34} className="rounded-lg" />
+            <div className="p-0.5 bg-[#070A12] rounded-lg sm:rounded-xl shadow-xs shrink-0">
+              <Logo size={26} className="rounded-md sm:hidden" />
+              <Logo size={34} className="rounded-lg hidden sm:block" />
             </div>
-            <div className="flex flex-col text-left">
-              <span className="text-[13px] font-semibold tracking-tight text-[#171717] leading-none">
+            <div className="flex flex-col text-left shrink-0">
+              <span className="text-[11px] min-[360px]:text-[12px] sm:text-[13px] font-semibold tracking-tight text-[#171717] leading-none whitespace-nowrap">
                 WebWithDivyanshu
               </span>
-              <span className="text-[9.5px] font-medium tracking-wider uppercase text-[#737373] mt-0.5 hidden sm:inline-block">
+              <span className="text-[9.5px] font-medium tracking-wider uppercase text-[#737373] mt-0.5 hidden md:inline-block">
                 Independent Web Design
               </span>
             </div>
@@ -76,24 +77,24 @@ export const Navbar: React.FC<NavbarProps> = ({ onContactClick }) => {
           </nav>
 
           {/* Primary Action Button */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1 sm:gap-2 shrink-0">
             <a
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-4 sm:px-5 py-2 rounded-full text-xs font-semibold tracking-wide text-white bg-[#171717] hover:bg-[#262626] active:scale-98 transition-all duration-150 shadow-xs group"
+              className="inline-flex items-center justify-center gap-1 sm:gap-1.5 px-2.5 min-[360px]:px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 rounded-full text-[10px] min-[360px]:text-[11px] sm:text-xs font-semibold tracking-normal sm:tracking-wide text-white bg-[#171717] hover:bg-[#262626] active:scale-98 transition-all duration-150 shadow-xs whitespace-nowrap shrink-0 group"
             >
               <span>Let's Work Together</span>
-              <ArrowUpRight className="w-3.5 h-3.5 text-neutral-300 group-hover:text-white transition-colors" />
+              <ArrowUpRight className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-neutral-300 group-hover:text-white transition-colors shrink-0 hidden min-[360px]:inline-block" />
             </a>
 
             {/* Mobile Hamburger Trigger */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 rounded-full text-[#171717] hover:bg-neutral-100 transition-colors"
+              className="lg:hidden p-1.5 sm:p-2 rounded-full text-[#171717] hover:bg-neutral-100 transition-colors shrink-0"
               aria-label={mobileMenuOpen ? 'Close Menu' : 'Open Menu'}
             >
-              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {mobileMenuOpen ? <X className="w-4 h-4 sm:w-5 sm:h-5" /> : <Menu className="w-4 h-4 sm:w-5 sm:h-5" />}
             </button>
           </div>
         </div>

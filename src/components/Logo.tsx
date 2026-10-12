@@ -8,8 +8,7 @@ interface LogoProps {
 
 /**
  * Official WebWithDivyanshu Logo component.
- * Preserves the exact original brand asset without altering colors, typography,
- * proportions, or background.
+ * Preserves the exact newly uploaded Logo.jpeg asset without alteration.
  */
 export const Logo: React.FC<LogoProps> = ({
   className = '',
@@ -18,7 +17,7 @@ export const Logo: React.FC<LogoProps> = ({
 }) => {
   return (
     <img
-      src="/logo.svg"
+      src="/Logo.jpeg"
       alt={alt}
       width={typeof size === 'number' ? size : undefined}
       height={typeof size === 'number' ? size : undefined}
@@ -30,6 +29,7 @@ export const Logo: React.FC<LogoProps> = ({
       }}
       className={`shrink-0 rounded-xl select-none shadow-sm ${className}`}
       loading="eager"
+      referrerPolicy="no-referrer"
     />
   );
 };
