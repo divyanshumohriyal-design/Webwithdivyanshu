@@ -2,7 +2,6 @@ import React from 'react';
 import { Logo } from './Logo';
 import { ArrowUpRight, ArrowDown, MapPin, Globe } from 'lucide-react';
 import { RevealText } from './RevealText';
-import { AnimatedTextGradientMotion } from './AnimatedTextGradientMotion';
 
 interface HeroProps {
   onContactClick: () => void;
@@ -16,13 +15,10 @@ export const Hero: React.FC<HeroProps> = ({ onContactClick }) => {
   return (
     <section className="relative pt-32 sm:pt-40 md:pt-48 pb-20 md:pb-28 overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* Small Label with Animated Gradient Text */}
+        {/* Small Label with restrained accent */}
         <div className="inline-flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 px-4 py-1.5 rounded-full bg-white border border-[#E5E5E5] text-[11px] sm:text-xs font-mono uppercase tracking-[0.16em] text-[#525252] shadow-xs mb-8">
           <span className="w-1.5 h-1.5 rounded-full bg-[#F26522] shrink-0" />
-          <AnimatedTextGradientMotion
-            text="Websites for Your Business"
-            className="font-semibold"
-          />
+          <span className="font-semibold text-[#171717]">Websites for Your Business</span>
           <span className="text-neutral-300 hidden sm:inline-block">·</span>
           <span className="hidden sm:inline-block">Independent Web Design</span>
         </div>

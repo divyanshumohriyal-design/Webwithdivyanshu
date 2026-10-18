@@ -3,17 +3,20 @@ import { motion } from 'motion/react';
 
 export interface AnimatedTextGradientMotionProps {
   text?: string;
+  children?: React.ReactNode;
   className?: string;
   colors?: string[];
   duration?: number;
 }
 
 export const AnimatedTextGradientMotion: React.FC<AnimatedTextGradientMotionProps> = ({
-  text = 'Websites for Your Business',
+  text,
+  children,
   className = '',
-  colors = ['#171717', '#F26522', '#262626', '#F26522', '#171717'],
-  duration = 2.6, // Requested: approximately 2-3 seconds
+  colors = ['#0D9488', '#0284C7', '#2563EB', '#0D9488'], // Smooth teal-to-blue continuous loop
+  duration = 3.5, // Subtle, polished, and professional duration
 }) => {
+  const content = children ?? text ?? 'Demo Websites';
   const [isReducedMotion, setIsReducedMotion] = useState(false);
 
   useEffect(() => {
@@ -37,27 +40,28 @@ export const AnimatedTextGradientMotion: React.FC<AnimatedTextGradientMotionProp
 
   const gradientString = `linear-gradient(90deg, ${colors.join(', ')})`;
 
-  // Accessible fallback for users with prefers-reduced-motion
+  // Accessible fallback for users with prefers-reduced-motion: static teal-to-blue gradient
   if (isReducedMotion) {
     return (
       <span
-        className={`inline-block font-semibold tracking-tight ${className}`}
+        className={`inline-block max-w-full ${className}`}
         style={{
-          backgroundImage: `linear-gradient(135deg, ${colors[0]} 40%, ${colors[1]} 100%)`,
+          backgroundImage: `linear-gradient(135deg, ${colors[0]} 20%, ${colors[1]} 60%, ${colors[2]} 100%)`,
           WebkitBackgroundClip: 'text',
           backgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
           color: colors[0],
         }}
       >
-        {text}
+        {content}
       </span>
     );
   }
 
+  // Automatic, continuous, non-hover-dependent animated teal-to-blue gradient
   return (
     <motion.span
-      className={`inline-block select-none font-semibold tracking-tight will-change-[background-position] ${className}`}
+      className={`inline-block max-w-full will-change-[background-position] ${className}`}
       style={{
         backgroundImage: gradientString,
         backgroundSize: '200% 100%',
@@ -75,7 +79,7 @@ export const AnimatedTextGradientMotion: React.FC<AnimatedTextGradientMotionProp
         ease: 'linear',
       }}
     >
-      {text}
+      {content}
     </motion.span>
   );
 };

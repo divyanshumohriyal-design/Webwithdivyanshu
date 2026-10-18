@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Lock, ExternalLink } from 'lucide-react';
 import ironforfitScreenshot from '../assets/images/regenerated_image_1791522295217.jpg';
+import { AnimatedTextGradientMotion } from './AnimatedTextGradientMotion';
 
 export const Portfolio: React.FC = () => {
   const projects = [
@@ -47,8 +48,12 @@ export const Portfolio: React.FC = () => {
           <div className="text-[11px] font-mono uppercase tracking-[0.2em] text-[#737373] mb-3">
             01 · Showcase
           </div>
-          <h2 className="text-3xl sm:text-5xl font-medium tracking-tight text-[#171717] mb-4">
-            Demo Websites
+          <h2 className="text-3xl sm:text-5xl font-medium tracking-tight mb-4">
+            <AnimatedTextGradientMotion
+              text="Demo Websites"
+              colors={['#0D9488', '#0284C7', '#2563EB', '#0D9488']}
+              duration={3.5}
+            />
           </h2>
           <p className="text-base sm:text-lg text-[#525252] font-normal leading-relaxed">
             A look at the website experiences I've created for different business types.
