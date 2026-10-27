@@ -64,6 +64,11 @@ export const Portfolio: React.FC = () => {
         <div className="space-y-20 md:space-y-28">
           {projects.map((project, idx) => (
             <article key={project.num} className="group">
+              {/* Existing Website Name Before Showcase */}
+              <h3 className="text-2xl font-semibold text-[#171717] tracking-tight mb-4 px-1 sm:px-2 text-center">
+                {project.name}
+              </h3>
+
               {/* Minimal Browser Window Frame */}
               <div className="rounded-2xl sm:rounded-3xl border border-[#E5E5E5] bg-white p-2.5 sm:p-4 shadow-[0_8px_30px_rgba(0,0,0,0.04)] overflow-hidden transition-all duration-300 hover:shadow-[0_16px_40px_rgba(0,0,0,0.07)] hover:border-[#D4D4D4]">
                 {/* Browser Chrome Header */}
@@ -98,9 +103,6 @@ export const Portfolio: React.FC = () => {
                   {project.num} · {project.category}
                 </div>
                 <div className="md:col-span-4">
-                  <h3 className="text-2xl font-semibold text-[#171717] tracking-tight">
-                    {project.name}
-                  </h3>
                   <span className="text-xs text-[#737373]">
                     {project.category}
                   </span>
